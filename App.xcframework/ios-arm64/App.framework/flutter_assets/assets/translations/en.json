@@ -1,0 +1,18 @@
+{
+  "global": {
+    "setting": "Setting",
+    "homepage": "Home",
+    "myBooking": "My Booking",
+    "promotions": "Promotions",
+    "account": "Account"
+  },
+  "setting": {
+    "themeSetting": "Theme setting",
+    "themeMode": "Theme mode",
+    "template": "Template",
+    "swapColors": "Swap colors",
+    "persistenceSetting": "Persistence",
+    "persistenceDescriptionSetting": "You can use volatile memory or Shared Preferences and Hive to persist the settings. You can toggle the used implementation dynamically in the app.",
+    "language": "Language"
+  }
+}

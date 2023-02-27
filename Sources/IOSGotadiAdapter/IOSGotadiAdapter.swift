@@ -27,11 +27,23 @@ public struct IOSGotadiAdapter {
     public func showFlutterHome(viewController: UIViewController) {
 //        flutterRun()
         let flutterViewController = FlutterViewController(engine: self.flutterEngine, nibName: nil, bundle: Bundle.module)
-        viewController.present(flutterViewController, animated: true, completion: nil)
+        flutterViewController.navigationController?.setNavigationBarHidden(true, animated: true)
+        if let nav = viewController.navigationController {
+            nav.pushViewController(flutterViewController, animated: true)
+        } else {
+            viewController.present(flutterViewController, animated: true)
+        }
+//        viewController.present(flutterViewController, animated: true, completion: nil)
     }
     
     public func showDemoController(viewController: UIViewController, appDelegate: UIApplicationDelegate) {
         let demoVC = DemoViewController(nibName: "DemoViewController", bundle: Bundle.module)
-        viewController.present(demoVC, animated: true)
+        if let nav = viewController.navigationController {
+            nav.pushViewController(demoVC, animated: true)
+        } else {
+            viewController.present(demoVC, animated: true)
+        }
+//        viewController.navigationController?.pushViewController(demoVC, animated: true)
+        
     }
 }
