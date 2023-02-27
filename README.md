@@ -1,2 +1,3 @@
-# gtd-ios-adapter
-Swift package for gotadi adapter
+# DemoPackageAdapter
+
+A description of this package.
