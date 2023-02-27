@@ -1,10 +1,10 @@
 import Flutter
-public struct DemoPackageAdapter {
+public struct IOSGotadiAdapter {
     public private(set) var text = "Hello, World!"
      
     var flutterEngine = FlutterEngine(name: "my flutter engine")
     class Bar {}
-    static var demoBundle: Bundle { return Bundle(for: DemoPackageAdapter.Bar.self) }
+    static var demoBundle: Bundle { return Bundle(for: IOSGotadiAdapter.Bar.self) }
     public init() {
         self.flutterEngine.run()
         let methodChannel = FlutterMethodChannel(name: "samples.flutter.dev/battery", binaryMessenger: self.flutterEngine.binaryMessenger)

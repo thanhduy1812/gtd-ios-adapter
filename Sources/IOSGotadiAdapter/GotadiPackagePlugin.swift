@@ -9,10 +9,10 @@ import Foundation
 import UIKit
 import Flutter
 
-public class DemoPackagePlugin: NSObject, FlutterPlugin {
+public class GotadiPackagePlugin: NSObject, FlutterPlugin {
     public static func register(with registrar: FlutterPluginRegistrar) {
         let channel = FlutterMethodChannel(name: "samples.flutter.dev/battery", binaryMessenger: registrar.messenger())
-        let instance = DemoPackagePlugin()
+        let instance = GotadiPackagePlugin()
         registrar.addMethodCallDelegate(instance, channel: channel)
     }
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
