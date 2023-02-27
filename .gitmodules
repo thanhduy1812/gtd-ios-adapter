@@ -1,0 +1,3 @@
+[submodule "gotadi-ios-adapter"]
+	path = gotadi-ios-adapter
+	url = https://github.com/thanhduy1812/gtd-ios-adapter
