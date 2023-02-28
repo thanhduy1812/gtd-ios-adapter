@@ -27,7 +27,7 @@ public struct IOSGotadiAdapter {
     public func showFlutterHome(viewController: UIViewController) {
 //        flutterRun()
         let flutterViewController = FlutterViewController(engine: self.flutterEngine, nibName: nil, bundle: Bundle.module)
-        flutterViewController.navigationController?.setNavigationBarHidden(true, animated: true)
+//        flutterViewController.navigationController?.setNavigationBarHidden(true, animated: true)
         if let nav = viewController.navigationController {
             nav.pushViewController(flutterViewController, animated: true)
         } else {
