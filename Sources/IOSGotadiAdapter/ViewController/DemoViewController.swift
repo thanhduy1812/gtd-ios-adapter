@@ -29,4 +29,8 @@ class DemoViewController: UIViewController {
         print("Demo controller")
     }
     
+    deinit {
+        print("demoviewDeinit")
+    }
+    
 }

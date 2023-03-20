@@ -22,10 +22,18 @@
   "flight": {
     "ROUNDTRIP": "Khứ hồi",
     "ONEWAY": "Một chiều",
+    "flightDirection": {
+      "departure": "Chuyến đi",
+      "return": "Chuyến về",
+      "departure_ssr": "Hành lý chuyến đi",
+      "return_ssr": "Hành lý chuyến về"
+    },
     "formSearch": {
       "departure": "Nơi đi",
       "destination": "Nơi đến",
       "departureDate": "Ngày đi",
+      "chooseDepartureDate": "Chọn ngày đi",
+      "chooseReturnDateDate": "Chọn ngày về",
       "returnDate": "Ngày về",
       "adult": "Người lớn",
       "child": "Trẻ em (2 - 12 tuổi)",
@@ -52,5 +60,10 @@
     "baggageDeparture": "Hành lý chuyến đi",
     "baggageReturn": "Hành lý chuyến về",
     "totalAmount": "Tổng tiền"
+  },
+  "bookingResult": {
+    "flight": {
+      "title": "Chi tiết chuyến bay"
+    }
   }
 }
