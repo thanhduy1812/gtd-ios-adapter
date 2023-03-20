@@ -15,13 +15,14 @@ class GotadiSearchBookViewController: FlutterViewController {
         
 //        self.pushRoute("/flightSearch")
         // Do any additional setup after loading the view.
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print("view appear")
         self.navigationController?.setNavigationBarHidden(true, animated: true)
-        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
+//        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
 
     }
     
