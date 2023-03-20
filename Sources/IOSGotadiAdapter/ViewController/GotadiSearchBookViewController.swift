@@ -21,6 +21,7 @@ class GotadiSearchBookViewController: FlutterViewController {
         super.viewWillAppear(animated)
         print("view appear")
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
 
     }
     
