@@ -6,14 +6,14 @@ import PackageDescription
 let package = Package(
     name: "IOSGotadiAdapter",
     platforms: [
-        .iOS(.v10)
+        .iOS(.v11)
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "IOSGotadiAdapter",
             targets: ["IOSGotadiAdapter", "App", "Flutter"]),
-//            targets: ["IOSGotadiAdapter", "App", "Flutter", "audio_session", "FMDB", "just_audio", "path_provider_foundation", "shared_preferences_foundation", "url_launcher_ios", "video_player_avfoundation", "wakelock", "webview_flutter_wkwebview"]),
+//            targets: ["IOSGotadiAdapter", "App", "Flutter", "audio_session", "FMDB", "just_audio", "path_provider_foundation", "shared_preferences_foundation", "url_launcher_ios", "video_player_avfoundation", "wakelock", "webview_fluttegor_wkwebview"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -27,6 +27,7 @@ let package = Package(
             dependencies: []),
         .binaryTarget(name: "App", path: "App.xcframework"),
         .binaryTarget(name: "Flutter", path: "Flutter.xcframework")
+//        .binaryTarget(name: "FlutterPluginRegistrant", path: "FlutterPluginRegistrant.xcframework")
 //        .binaryTarget(name: "audio_session", path: "audio_session.xcframework"),
 //        .binaryTarget(name: "FMDB", path: "FMDB.xcframework"),
 //        .binaryTarget(name: "just_audio", path: "just_audio.xcframework"),

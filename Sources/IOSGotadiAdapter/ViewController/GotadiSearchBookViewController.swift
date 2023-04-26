@@ -8,10 +8,11 @@
 import UIKit
 import Flutter
 class GotadiSearchBookViewController: FlutterViewController {
-
+    var isPushToMyBooking: Bool?
+    var isPushToInvoice: Bool?
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("flutter didload")
+        print("GotadiSearchBookViewController didload")
         
 //        self.pushRoute("/flightSearch")
         // Do any additional setup after loading the view.
@@ -20,30 +21,55 @@ class GotadiSearchBookViewController: FlutterViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("view appear")
+        print("GotadiSearchBookViewController appear")
         self.navigationController?.setNavigationBarHidden(true, animated: true)
 //        self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
 
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("GotadiSearchBookViewController didappear")
+        if(isPushToMyBooking ?? false) {
+            isPushToMyBooking = false
+            self.pushRoute("/myBooking")
+        }
+        if (isPushToInvoice ?? false) {
+            isPushToInvoice = false
+            self.pushRoute("/vibInvoice")
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print("flutter disappear")
-//        self.engine?.destroyContext()
-//        self.engine?.viewController = nil
+        print("GotadiSearchBookViewController disappear")
         
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        self.engine?.viewController = nil
     }
-    
     
     deinit {
-        print("flutter deinit")
+        print("GotadiSearchBookViewController deinit")
         
     }
+    
+//    required init(coder aDecoder: NSCoder) {
+//        super.init(coder: aDecoder)
+//        print("GotadiSearchBookViewController init")
+//    }
+//
+//    override init(engine: FlutterEngine, nibName: String?, bundle nibBundle: Bundle?) {
+//        super.init(engine: engine, nibName: nibName, bundle: nibBundle)
+//        print("GotadiSearchBookViewController init with engine")
+//    }
+//
+//    override init(project: FlutterDartProject?, initialRoute: String?, nibName: String?, bundle nibBundle: Bundle?) {
+//        super.init(project: project, initialRoute: initialRoute, nibName: nibName, bundle: nibBundle)
+//        print("GotadiSearchBookViewController init with project")
+//    }
     
 
     /*
