@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		a2SKkUzGUecmcu1NzKpzAzFnrCw=
+		R671ZGbnxsdFlUB+oGXNjafi3jo=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -204,6 +204,10 @@
 		<data>
 		E5q9/Z8+otodIdANVlQ+EItj854=
 		</data>
+		<key>flutter_assets/packages/vib_resource/assets/icons/clock-time-schedule.svg</key>
+		<data>
+		8CAYLkEwlgH5XyTaA1A9FokNZfM=
+		</data>
 		<key>flutter_assets/packages/vib_resource/assets/icons/combo.svg</key>
 		<data>
 		Fc+v6YJ/Bx5OVNOi1JVtkqgtJgE=
@@ -211,6 +215,10 @@
 		<key>flutter_assets/packages/vib_resource/assets/icons/down.svg</key>
 		<data>
 		D8d8E0Z63KRqUmE9az9xFKj5XxA=
+		</data>
+		<key>flutter_assets/packages/vib_resource/assets/icons/error-circle.svg</key>
+		<data>
+		j6T8MaDkX/yXUsFrvHfzEZw0rIo=
 		</data>
 		<key>flutter_assets/packages/vib_resource/assets/icons/filter.svg</key>
 		<data>
@@ -347,7 +355,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d9+PvlFq3L6NhcSvgiQV9dn6V9bWTZww3QeLWwo+lQE=
+			cO0pz8uAqCNp9FpNqNS3ty0Z32A7IhiCCEan6O4nW/k=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -672,6 +680,13 @@
 			dQDBitsaaMuUhGvS5PSEUnPSg0Rg5eLu59Zc8F8/9Bw=
 			</data>
 		</dict>
+		<key>flutter_assets/packages/vib_resource/assets/icons/clock-time-schedule.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			O1kQ0cm2IOqy4j4kuaeWOLrSAK04dY8QGR8aXT6u02Q=
+			</data>
+		</dict>
 		<key>flutter_assets/packages/vib_resource/assets/icons/combo.svg</key>
 		<dict>
 			<key>hash2</key>
@@ -684,6 +699,13 @@
 			<key>hash2</key>
 			<data>
 			GUZWNsufYvyZyW0me8J2L2WYoc1q6mqF0oiFBMx7DuY=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/vib_resource/assets/icons/error-circle.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5Jk2DwJ8GPfFi9mb597YFOB38sLQC7tDHnHR2JAkOS4=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/vib_resource/assets/icons/filter.svg</key>

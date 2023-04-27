@@ -1,50 +1,20 @@
 import Flutter
 public class IOSGotadiAdapter {
-    public private(set) var text = "Hello, World!"
     
     public static let shared = IOSGotadiAdapter()
     
     var flutterEngine: FlutterEngine?
     var methodChannel: FlutterMethodChannel? = nil
-    var gotadiViewController: GotadiSearchBookViewController?
-    class Bar {}
-    static var demoBundle: Bundle { return Bundle(for: IOSGotadiAdapter.Bar.self) }
+    class ReferBundle {}
+    static var referBundle: Bundle { return Bundle(for: IOSGotadiAdapter.ReferBundle.self) }
+    
+    public var config: GotadiPartnerSetting?
     
     private init() {
-//        self.flutterEngine.run(withEntrypoint: "", initialRoute: "/homeVIB")
-//        DispatchQueue.main.async {[weak self] in
-//            self?.flutterEngine = FlutterEngine(name: "GotadiSDK")
-//            self?.flutterEngine?.run()
-//        }
         self.flutterEngine = FlutterEngine(name: "GotadiSDK")
-        self.flutterEngine?.run(withEntrypoint: "", initialRoute: "/homeVIB")
 //        currentFlutterViewController = GotadiSearchBookViewController(project: FlutterDartProject(precompiledDartBundle: Bundle.module), initialRoute: "/homeVIB", nibName: nil, bundle: Bundle.module)
-        print(getDocumentsDirectory())
-
-
-//        self.flutterEngine.run(withEntrypoint: "", initialRoute: "/flightSearch")
-
-
-        
-//        sendMessageToFlutter()
-//        sendMessageFromFlutter()
-        
-        //Handle pushtoPayment
-//        self.flutterEngine?.navigationChannel.setMethodCallHandler({[weak self] call, result in
-//            if call.method == "partner.payment" {
-//                print("push to payment viewcontroller")
-//                if let payVC = self?.paymentViewController {
-//                    self?.flutterEngine?.viewController?.navigationController?.pushViewController(payVC, animated: true)
-//                }
-//            }
-//        })
+//        print(getDocumentsDirectory())
     }
-    
-//    private func sendMessageToFlutter(){
-//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0) {[weak self] in
-//            self?.methodChannel?.invokeMethod("getAppConfig", arguments: ["locale": "en"])
-//        }
-//    }
     
     private func sendMessageFromFlutter() {
         guard let flutterEngine = self.flutterEngine else {return}
@@ -66,37 +36,32 @@ public class IOSGotadiAdapter {
         }
     }
     
+    public func setup(partnerSetting: GotadiPartnerSetting) {
+        config = partnerSetting
+        self.flutterEngine?.run(withEntrypoint: "", initialRoute: "/homeVIB")
+        self.flutterEngine?.localizationChannel?.setMethodCallHandler({ call, result in
+            if call.method == "partner.app.scheme" {
+                let data: [String: String] = [
+                    "env": partnerSetting.env,
+                    "partner": partnerSetting.partnername,
+                    "locale" : partnerSetting.language,
+                    "token" : partnerSetting.token
+                ]
+                result(data)
+            }
+        })
+    }
+    
     public func flutterRun() {
         self.flutterEngine?.run()
 //        self.flutterEngine.run(withEntrypoint: "", initialRoute: "/flightSearch")
     }
     
-    public func showFlutterHome(viewController: UIViewController, paymentViewController: UIViewController) {
-//        flutterRun()
-//        sendMessageToFlutter()
-//        sendMessageToFlutter()
-//        self.flutterEngine.navigationChannel.invokeMethod(<#T##method: String##String#>, arguments: <#T##Any?#>)
-        
-//        let flutterViewController = FlutterViewController(engine: self.flutterEngine, nibName: nil, bundle: Bundle.module)
-//        self.flutterEngine.run(withEntrypoint: "/b2b2cMain", initialRoute: "/flightSearch")
-//        self.flutterEngine.run(withEntrypoint: "SearchFlightPage")
-        guard let flutterEngine = self.flutterEngine else {return}
-    
-//        flutterEngine.viewController = nil
-//        self.flutterEngine.restorationChannel
-//        self.flutterEngine.run(withEntrypoint: "", initialRoute: "/flightSearch")
-        let flutterViewController = GotadiSearchBookViewController(engine: flutterEngine, nibName: nil, bundle: Bundle.module)
-//        flutterViewController.navigationController?.setNavigationBarHidden(true, animated: true)
-        if let nav = viewController.navigationController {
-            nav.pushViewController(flutterViewController, animated: true)
-        } else {
-            viewController.present(flutterViewController, animated: true)
-        }
-//        viewController.present(flutterViewController, animated: true, completion: nil)
-    }
-    
     public func pushToHomePartner(partnerViewController: UIViewController, handlePayment:@escaping (_ gotadiViewController: UIViewController, _ bookingNumber: String) -> Void) {
         guard let flutterEngine = self.flutterEngine else {return}
+        guard let _ = partnerViewController.navigationController else {
+            fatalError("Your viewcontroller must have navigation stack")
+        }
         let homeBookingVC = GotadiSearchBookViewController(engine: flutterEngine, nibName: nil, bundle: Bundle.module)
         homeBookingVC.engine?.navigationChannel.setMethodCallHandler({[weak self] call, result in
             if call.method == "push.partner.payment" {
@@ -210,17 +175,6 @@ public class IOSGotadiAdapter {
     
     deinit {
         print("deninit gotadi adapter")
-    }
-    
-    public func showDemoController(viewController: UIViewController) {
-        let demoVC = DemoViewController(nibName: "DemoViewController", bundle: Bundle.module)
-        if let nav = viewController.navigationController {
-            nav.pushViewController(demoVC, animated: true)
-        } else {
-            viewController.present(demoVC, animated: true)
-        }
-//        viewController.navigationController?.pushViewController(demoVC, animated: true)
-
     }
     
     func getDocumentsDirectory() -> URL {
