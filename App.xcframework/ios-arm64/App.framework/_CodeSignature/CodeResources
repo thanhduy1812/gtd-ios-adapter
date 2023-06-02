@@ -10,7 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		R671ZGbnxsdFlUB+oGXNjafi3jo=
+		Ufmj5G2K2ARIAcsEPeOg3FCk9+A=
+		</data>
+		<key>flutter_assets/AssetManifest.smcbin</key>
+		<data>
+		uUmRDu9+0+SKcEk3XcYG+nwOKAE=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -18,11 +22,11 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		lA7Bh5O0M/vhDhoHCQK1n6ZbHqA=
+		Yg9ifvYbG8k4tuVKTWrIw0z+KuE=
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
-		q1DfElhLvZFZ7ViZ9LZ1lQoSI3Q=
+		UIOo9cd1KbKs2IURvyykJtwxVm4=
 		</data>
 		<key>flutter_assets/packages/common_resource/assets/env/env.prod</key>
 		<data>
@@ -156,9 +160,21 @@
 		<data>
 		KXkZ1ZybpPoXJRzbnwbCbKkG5ZM=
 		</data>
+		<key>flutter_assets/packages/vib_resource/assets/icons-dark/calendar.svg</key>
+		<data>
+		x1hIcS+jF7kbx2iO8twPrjSLpEs=
+		</data>
+		<key>flutter_assets/packages/vib_resource/assets/icons-dark/flight/departure.svg</key>
+		<data>
+		iQn64IPC3CDEQr6cmBrEiNGtDE4=
+		</data>
+		<key>flutter_assets/packages/vib_resource/assets/icons-dark/flight/destination.svg</key>
+		<data>
+		vPgKzFISmXd/kdnZOiNbMTrwqRY=
+		</data>
 		<key>flutter_assets/packages/vib_resource/assets/icons/.DS_Store</key>
 		<data>
-		ucaBrYD3w7oOHsiM3//RL4tf9Ow=
+		SgXcQ9oo2+dhCNVpMJyXrb4SGAk=
 		</data>
 		<key>flutter_assets/packages/vib_resource/assets/icons/account.svg</key>
 		<data>
@@ -166,7 +182,7 @@
 		</data>
 		<key>flutter_assets/packages/vib_resource/assets/icons/airlines/.DS_Store</key>
 		<data>
-		xCL8OhAo6BESwF5KUiUAIde8Qwg=
+		YKItk+nsK4cEa3CUnzPablgnGXE=
 		</data>
 		<key>flutter_assets/packages/vib_resource/assets/icons/airlines/QH.svg</key>
 		<data>
@@ -190,7 +206,7 @@
 		</data>
 		<key>flutter_assets/packages/vib_resource/assets/icons/calendar.svg</key>
 		<data>
-		QYfNYTY0vYlZ6ASeiEnnMFLpSrY=
+		XMdAzZ1JigQjqSQgRSTUeIw7zeY=
 		</data>
 		<key>flutter_assets/packages/vib_resource/assets/icons/check-done-circle.svg</key>
 		<data>
@@ -230,7 +246,7 @@
 		</data>
 		<key>flutter_assets/packages/vib_resource/assets/icons/flight/departure.svg</key>
 		<data>
-		CKMXUYyzkDm8LxKs2KOke4demHk=
+		I9wdFOB03jduumWzgsXELCWOHdQ=
 		</data>
 		<key>flutter_assets/packages/vib_resource/assets/icons/flight/departure_grey.svg</key>
 		<data>
@@ -238,7 +254,7 @@
 		</data>
 		<key>flutter_assets/packages/vib_resource/assets/icons/flight/destination.svg</key>
 		<data>
-		adPEkV7Im4/aFlfWpT43SRDufKg=
+		HQnrwgtUeaTORuEBTENS7Tb2Ek8=
 		</data>
 		<key>flutter_assets/packages/vib_resource/assets/icons/flight/destination_grey.svg</key>
 		<data>
@@ -346,7 +362,7 @@
 		</data>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>
 		<data>
-		Z/DhfUUahgFGsthszkW1YubfdU8=
+		KL+7f3IYR/Y9WDlxxUeDmgGoluc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -355,7 +371,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cO0pz8uAqCNp9FpNqNS3ty0Z32A7IhiCCEan6O4nW/k=
+			pkEIpSUfYOkDWJHHcLg/uDBeCSgNyP8v5aQNp2k4zAM=
+			</data>
+		</dict>
+		<key>flutter_assets/AssetManifest.smcbin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HmZZMcxKyDxXgxs85iIov/Ptjz5n9sYMHEPcSMecc48=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -369,14 +392,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HuA7114vJz+ZZ/R0mjBAbWPOAMlwQbaH2K+VsZxVGfM=
+			sEb4/eSt2nv40KG1Hdtdjm0h+AjlJF9Brxq0DK3Oy5o=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cL5aNW0w+47Yu2WiEKCn7ff5N2heHLJSlhy4q/SDNJI=
+			K6h9SRb2jfB0JpWBp3+SrxEDvD+1NtP5sQa+lLGdX+w=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/common_resource/assets/env/env.prod</key>
@@ -610,6 +633,27 @@
 			t3ilK4Tzm6HTsIVTokZkNXOzNFO1SBtNCcYEvMztkw0=
 			</data>
 		</dict>
+		<key>flutter_assets/packages/vib_resource/assets/icons-dark/calendar.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RO3w+hxVbBq6JRsvv0GcHraQmmSupAZSzfN8llq6XLc=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/vib_resource/assets/icons-dark/flight/departure.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			57B0oN5rXA0gIRZUDUCMbTvAElIWIFt7rgMDaznj/iA=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/vib_resource/assets/icons-dark/flight/destination.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XIVgTl1NG4uq5SBRGJtZW7zzhlZ+r0xHJKt1T5fjLmw=
+			</data>
+		</dict>
 		<key>flutter_assets/packages/vib_resource/assets/icons/account.svg</key>
 		<dict>
 			<key>hash2</key>
@@ -656,7 +700,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VFUbD1LWIbROSdbQzpURC2nHmKCNqAshflAKd+Vdd0c=
+			GfVkJ+1LyqE8BlWPG5cmeUIFGE1MFUZIvAyglhMrp28=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/vib_resource/assets/icons/check-done-circle.svg</key>
@@ -726,7 +770,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rNivSMTW43tivkHRYeXVDWwN9FkdTdDuuyeCAL27Csc=
+			iHBjpZaoVgZdaBwGImrCJhVgjqvKY1hYVGwK6KVskSI=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/vib_resource/assets/icons/flight/departure_grey.svg</key>
@@ -740,7 +784,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			45CUYeiSqS2PkR7vAquK9kfOqc813xNLFVtnav2kSsQ=
+			tGLV3QLdH844CCw8FhM9AzvYH7D5oEYYZWCKApwayP8=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/vib_resource/assets/icons/flight/destination_grey.svg</key>
@@ -929,7 +973,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hgGex10sKxTSC95tzLdljzYd3qnntuSb96YXXaU9Nlc=
+			v6u8YtYjslOLIIb1rrgcOW817fxVEiBaprKuV+f6FpY=
 			</data>
 		</dict>
 	</dict>
