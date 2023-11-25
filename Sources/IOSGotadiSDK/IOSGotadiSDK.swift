@@ -1,4 +1,5 @@
 import Flutter
+import FlutterPluginRegistrant
 public class IOSGotadiSDK {
     
     public static let shared = IOSGotadiSDK()
@@ -39,6 +40,7 @@ public class IOSGotadiSDK {
     public func setup(partnerSetting: GotadiPartnerSetting) {
         config = partnerSetting
         self.flutterEngine?.run(withEntrypoint: "", initialRoute: "/homeVIB")
+        GeneratedPluginRegistrant.register(with: self.flutterEngine!)
         self.flutterEngine?.localizationChannel?.setMethodCallHandler({ call, result in
             if call.method == "partner.app.scheme" {
                 let data: [String: String] = [
@@ -63,6 +65,7 @@ public class IOSGotadiSDK {
         guard let _ = partnerViewController.navigationController else {
             fatalError("Your viewcontroller must have navigation stack")
         }
+        flutterEngine.viewController = nil
         let homeBookingVC = GotadiSearchBookViewController(engine: flutterEngine, nibName: nil, bundle: Bundle.module)
         homeBookingVC.engine?.navigationChannel.setMethodCallHandler({[weak self] call, result in
             if call.method == "push.partner.payment" {
